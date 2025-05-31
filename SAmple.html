@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Computer Freeks NZ - Professional Computer Repairs, Remote Support, Cybersecurity, AI Solutions" />
+    <title>Computer Freeks NZ - Tech Support & AI Solutions</title>
+
+    <!-- n8n Chat Widget Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+    <!-- OPTIONAL: Force-hide powered by footer if needed -->
+    <style>
+    .n8n-chat__footer {
+        display: none !important;
+    }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1; margin: 0; padding: 0;">
+
+    <!-- Header -->
+    <header style="background-color: #1e73be; color: white; padding: 20px; text-align: center;">
+        <h1>Computer Freeks NZ</h1>
+        <p>Professional Computer Repairs, Remote Support, ThreatDown Cybersecurity & AI Solutions</p>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding: 20px;">
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Remote Support (NZ-wide)</li>
+                <li>Computer Repairs & Sales</li>
+                <li>ThreatDown Cybersecurity</li>
+                <li>Microsoft 365 & Cloud Setup</li>
+                <li>AI Integration & Business Automation</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@computerfreeks.co.nz">info@computerfreeks.co.nz</a></p>
+            <p>Phone: (07) 808-6939</p>
+            <p>Website: <a href="https://computerfreeks.co.nz/">https://computerfreeks.co.nz/</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #f1f1f1; text-align: center; padding: 10px;">
+        <p>&copy; 2025 Computer Freeks NZ. All rights reserved.</p>
+    </footer>
+
+    <!-- n8n Chat Widget Script -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://glorious-mayfly-polished.ngrok-free.app/webhook/9515f15f-8a08-4184-a071-7baae4b8a689/chat',
+            mode: 'window',
+            showWelcomeScreen: false,  // no Start Chat screen
+            initialMessages: [
+                'Kia ora! 👋',
+                'Welcome to Computer Freeks NZ — How can we help you today?'
+            ],
+            i18n: {
+                en: {
+                    title: 'Kia ora! 👋',
+                    subtitle: "Chat with us — we're here to help!",
+                    footer: '',  // removes Powered by n8n
+                    inputPlaceholder: 'Type your question here...',
+                },
+            },
+        });
+    </script>
+
+</body>
+</html>
